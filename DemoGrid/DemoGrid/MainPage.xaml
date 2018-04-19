@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoGrid"
+             x:Class="DemoGrid.MainPage">
+
+    <Grid ColumnDefinitions="10"
+          RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto">
+            </RowDefinition>
+            <RowDefinition Height="2">
+            </RowDefinition>
+            <RowDefinition Height="200">
+            </RowDefinition>
+            <RowDefinition Height="Auto">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="3*">  
+            </ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Button Text="Boton Uno"
+                BackgroundColor="Green">
+        </Button>
+        
+        <Button Text="Boton Dos"
+                BackgroundColor="Orange"
+                Grid.Column="1"
+                Grid.Row="1">
+        </Button>
+        
+        <Button Text="Boton Tres"
+                BackgroundColor="Blue"
+                Grid.Row="1">
+        </Button>
+        
+        <Button Text="Boton Cuatro"
+                BackgroundColor="Red"
+                Grid.Column="1"
+                Grid.Row="2">
+        </Button>
+
+        <Button Text="Boton Cinco"
+                BackgroundColor="Salmon"
+                Grid.Column="1"
+                Grid.Row="2">
+        </Button>
+        
+        <Button Text="Boton Seis"
+                BackgroundColor="Red"
+                Grid.Column="1"
+                Grid.Row="3">
+        </Button>
+
+        <BoxView BackgroundColor="Azure"
+                 Grid.Column="2"
+                 Grid.Row="3"></BoxView>
+    </Grid>
+
+</ContentPage>
